@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 2572711465101130413}
   - component: {fileID: 2572711463618702300}
   - component: {fileID: 2572711463618702301}
+  - component: {fileID: 3369759234717732942}
   m_Layer: 0
   m_Name: Stag_Rudolph
   m_TagString: Untagged
@@ -176,6 +177,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upperLimit: 20
   lowerLimit: -10
+--- !u!65 &3369759234717732942
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2572711465093791507}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11775836, y: 0.47131532, z: 0.37817097}
+  m_Center: {x: 0.0029536514, y: 0.22705378, z: 0.04530239}
 --- !u!1 &2572711465093835991
 GameObject:
   m_ObjectHideFlags: 0

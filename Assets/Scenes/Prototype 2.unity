@@ -157,6 +157,8 @@ MonoBehaviour:
   - {fileID: 8213101035377780947, guid: 70066089f6504a34b9afbe1c7b3c95bc, type: 3}
   - {fileID: 2572711465093791507, guid: e0c80c04cbc35cc49b312391ae35f1ec, type: 3}
   animalIndex: 0
+  startDelay: 1.5
+  spawnInterial: 2
 --- !u!4 &37161076
 Transform:
   m_ObjectHideFlags: 0

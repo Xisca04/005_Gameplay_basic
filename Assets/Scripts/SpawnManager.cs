@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject[] animalPrefabs;
-    public int animalIndex;
+    public GameObject[] animalPrefabs; // Array de animales
+    private int animalIndex;  // índice del array de animales
 
     private float spawnRangeX = 14f;
     private float spawnPosZ = 15f;
 
-    public float startDelay = 1.5f;  //Determina que tiempo tiene el jugador
-    public float spawnInterial = 2f; //Determina cada cuanto sale el animal
+    public float startDelay = 1.5f;  //Determina qué tiempo tiene el jugador
+    public float spawnInterial = 2f; //Determina cada cuánto sale el animal
 
-    private void SpawnRandomAnimal() //Funcion que determina la aletoriedad de los tipos de animales que van apareciendo
+    private void SpawnRandomAnimal() //Función que determina la aletoriedad de los tipos de animales que van apareciendo en una posición aleatoria
     {
-        animalIndex = Random.Range(0, animalPrefabs.Length);
+        animalIndex = Random.Range(0, animalPrefabs.Length); //Índice aleatorio
         Instantiate(animalPrefabs[animalIndex], RandomSpawnPos(), animalPrefabs[animalIndex].transform.rotation);
     }
 
@@ -25,7 +25,7 @@ public class SpawnManager : MonoBehaviour
         return new Vector3(randomX, 0, spawnPosZ);
     }
 
-    private void Start()
+    private void Start() // Llama periódicamente a la función SpawnRnadomAnimal
     {
         InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterial);
     }
